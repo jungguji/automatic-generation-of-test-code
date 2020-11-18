@@ -1,5 +1,8 @@
 package com.junggu.automaticgenerationoftestcode.domain.convert.domain;
 
+import lombok.Getter;
+
+@Getter
 public enum BracketType {
     BIG("[", "]"),
     MEDIUM("{", "}");
@@ -10,13 +13,5 @@ public enum BracketType {
     BracketType(String left, String right) {
         this.left = left;
         this.right = right;
-    }
-
-    public String getLeft() {
-        return this.left;
-    }
-
-    public String getRight() {
-        return this.right;
     }
 }

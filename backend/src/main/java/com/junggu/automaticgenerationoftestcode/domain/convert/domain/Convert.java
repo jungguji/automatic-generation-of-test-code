@@ -7,7 +7,6 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Convert {
     private static final String STRING = "string";
-    private static final String CHAR = "char";
     private static final String SEPARATOR = "@";
     private static final String COMMA = ",";
 
@@ -39,8 +38,8 @@ public class Convert {
     private String getRemoveBracket(String input) {
         return input.replace("], [", ",@,")
                 .replace("],[", ",@,")
-                .replace(BracketType.BIG.getRight(), "")
                 .replace(BracketType.BIG.getLeft(), "")
+                .replace(BracketType.BIG.getRight(), "")
                 .trim();
     }
 

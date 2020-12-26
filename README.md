@@ -11,6 +11,7 @@
 
 ## 적용 기술
 
+Java 1.8
 * Spring boot
 * Java
-* Vue.js
+* Vue.js*
